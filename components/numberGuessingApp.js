@@ -15,9 +15,9 @@ function GuessingGame() {
       Alert.alert(`You guessed the number in ${attempts + 1} attempts!`, `The right number was ${randomNumber}`);
       resetGame();
     } else if (userGuess > randomNumber) {
-      setWrongGuess('Try again! Your guess is too high.');
+      setWrongGuess(`Try again! Your guess ${guess} is too high.`);
     } else {
-      setWrongGuess('Try again! Your guess is too low.');
+      setWrongGuess(`Try again! Your guess ${guess} is too low.`);
     }
 
     setGuess('');
